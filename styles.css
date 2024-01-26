@@ -1,11 +1,10 @@
 body {
-    background-color: #201e21;
-    color: #ffffff;
+    color: #201e21;
 }
 
 h1, h2 {
     font-family: 'Inter', serif;
-    color: #ffffff;
+    color: #201e21;
 }
 
 h1 {
@@ -16,4 +15,28 @@ h1 {
 p {
     margin: 10px 0;
     padding: 5px;
+}
+
+#bio, #hobbies, #pics {
+    margin: 20px;
+    border: 1px solid #4c474e;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.dark-theme {
+    background-color: #201e21;
+    color: #fff;
+}
+
+.dark-theme h1, .dark-theme h2 {
+    color: #bd986c;
 }

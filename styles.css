@@ -1,42 +1,109 @@
+/* Add Inter font */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+  @supports (font-variation-settings: normal) {
+    :root { font-family: InterVariable, sans-serif; }
+}
+
 body {
     color: #201e21;
+    font-family: 'Inter'; 
+    font-weight: 600;
+    font-size: 18px;
 }
 
+/* Styling for Headers 1 and 2 */
 h1, h2 {
-    font-family: 'Inter', serif;
+    font-family: 'Inter'; 
+    font-size: 28px; 
+    font-weight: 700;
     color: #201e21;
 }
 
+/* Change for Header 1 */
 h1 {
+    font-family: 'Inter'; 
+    font-size: 48px; 
+    font-weight: 800;
     margin-bottom: 20px;
     padding-bottom: 10px;
 }
 
+/* paragraph styling */
 p {
+    font-size: 20px;
     margin: 10px 0;
     padding: 5px;
 }
 
-#bio, #hobbies, #pics {
+/* padding for bio and hobbies */
+#bio, #hobbies {
     margin: 20px;
-    border: 1px solid #4c474e;
     padding: 20px;
-    border-radius: 8px;
 }
 
+/* makes unordered list display left to right */
 ul {
     padding-left: 20px;
+    display: inline-flex;   
 }
 
+/* makes unordered list display left to right */
 li {
-    margin-bottom: 5px;
+    display: inline-block;
 }
 
+/* custom style for theme button and make float on top right */
+#dark-theme {
+    font-family: Inter;
+    font: white;
+    font-size: 16px;
+    font-weight: 700;
+    float: right;
+    padding: 20px;
+    margin: 45px;
+    background-color: #408EE1;
+    border-radius: 999px;
+    border: None;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* change colors for dark theme to work */
 .dark-theme {
     background-color: #201e21;
     color: #fff;
 }
 
+/* change header colors for dark theme */
 .dark-theme h1, .dark-theme h2 {
-    color: #bd986c;
+    color: #408EE1;
+}
+
+/* style for general cards */
+.card {
+    width: 250px;
+    height: 490px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-left: 24px;
+    position: relative;
+}
+
+/* adds border radius to card images */
+img {
+    border-radius: 5px 5px 0 0;  
+}
+
+/* make text on cards the same, unaffected by image size */
+.container {
+    position: absolute;
+    left: 16px;
+    top: 370px;
+}
+
+/* remove indent in paragraph for cards */
+.p2 {
+    margin-left: 0px;
 }

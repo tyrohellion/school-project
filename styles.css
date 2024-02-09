@@ -66,10 +66,8 @@ li {
     border-radius: 999px;
     border: None;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    position: absolute;   
-    left: 375px;
-    margin: 30px;
-    margin-top: 46px;
+    margin: 28px;
+    float: right;
 }
 
 /* change colors for dark theme to work */
@@ -81,6 +79,10 @@ li {
 /* change header colors for dark theme */
 .dark-theme h1, .dark-theme h2 {
     color: #408EE1;
+}
+
+.dark-theme h3, .dark-theme p {
+    color: #201e21;
 }
 
 /* style for general cards */
@@ -111,11 +113,9 @@ img {
 }
 
 nav {
-    background-color: #333;
     text-align: center;
     border-radius: 999px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    margin: 30px;
     margin-top: 38px;
     display: flex;
     margin-bottom: 160px;
@@ -125,9 +125,9 @@ nav ul {
     position: absolute;
     list-style: none;
     padding: 8px;
-    margin-left: 16px;
+    margin-left: 0px;
     float: left;
-    left: 80px;
+    left: 40px;
     top: 40px;
 }
 
@@ -141,9 +141,26 @@ nav ul li {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.dark-theme nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 999px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dark-theme nav ul li a {
+    text-decoration: none;
+    color: black;
     font-size: 16px;
     font-weight: bold;
 }
@@ -154,14 +171,14 @@ nav ul li a:hover {
 
 .profile-card {
     width: 300px;
-    margin: 20px auto;
+    margin: 40px;
     border: 1px solid #ddd;
     padding: 20px;
     background-color: white;
     text-align: center;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 8px;
-    float: right;
+    display: inline-block;
 }
 
 .profile-card .profile-pic {
